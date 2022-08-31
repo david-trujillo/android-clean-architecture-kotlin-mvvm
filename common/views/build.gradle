@@ -1,0 +1,26 @@
+apply from: "$rootDir/common-android-library.gradle"
+apply plugin: 'kotlin-kapt'
+
+kapt {
+    correctErrorTypes = true
+}
+
+dependencies {
+    api project(Modules.navigation)
+    api project(Modules.network)
+    api project(Modules.analytics)
+
+    api Libs.glide
+    api Libs.core_ktx
+    api Libs.activity_ktx
+    api Libs.fragment_ktx
+    api Libs.material
+    api Libs.appcompat
+    api Libs.constraintlayout
+    api Libs.recyclerview
+    api Libs.swipeRefreshLayout
+    api Libs.navigation_ui
+    api Libs.navigation_fragment
+    api Libs.rxandroid3
+    api Libs.rxjava3
+}

@@ -1,0 +1,10 @@
+apply from: "$rootDir/common-android-library.gradle"
+
+dependencies {
+    api project(Modules.cache)
+
+    api Libs.rxjava3
+    api Libs.retrofit
+    api Libs.converter_moshi
+    implementation Libs.logging_interceptor
+}

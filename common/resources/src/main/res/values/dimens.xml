@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="huge_box_size">26dp</dimen>
+    <dimen name="big_box_size">20dp</dimen>
+    <dimen name="medium_box_size">16dp</dimen>
+    <dimen name="small_box_size">12dp</dimen>
+    <dimen name="tiny_box_size">8dp</dimen>
+    <dimen name="zero_box_size">0dp</dimen>
+
+    <dimen name="huge_text_size">24sp</dimen>
+    <dimen name="big_text_size">18sp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
+    <dimen name="tiny_text_size">12sp</dimen>
+
+    <dimen name="editable_min_height_size">48dp</dimen>
+
+    <dimen name="header_size">100dp</dimen>
+    <dimen name="header_elevation">5dp</dimen>
+
+</resources>

@@ -1,0 +1,7 @@
+apply from: "$rootDir/common-android-library.gradle"
+
+dependencies {
+    api Libs.navigation_ui
+    api Libs.navigation_fragment
+    api Libs.appcompat
+}

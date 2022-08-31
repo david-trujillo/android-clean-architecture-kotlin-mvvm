@@ -1,0 +1,19 @@
+apply from: "$rootDir/common-android-library.gradle"
+
+android {
+
+    buildFeatures {
+        buildConfig = true
+    }
+
+}
+
+dependencies {
+    api project(Modules.views)
+    api project(Modules.resources)
+    api project(Modules.navigation)
+    api project(Modules.network)
+    api Libs.converter_moshi
+    api Libs.rxjava3
+    api Libs.rxandroid3
+}

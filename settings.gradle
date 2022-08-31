@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+include ':app'
+include ':navigation'
+include ':common:cache'
+include ':common:resources'
+include ':common:views'
+include ':common:network'
+
+include ':features:home'
+include ':features:tram'
+include ':features:tram-list'
+
+include ':libs:analytics'

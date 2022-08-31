@@ -1,0 +1,57 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.App" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnSurface">@color/color_on_surface</item>
+        <item name="colorPrimaryContainer">@color/color_container</item>
+        <item name="colorOnPrimaryContainer">@color/color_on_container</item>
+        <item name="backgroundColor">@color/color_background</item>
+        <item name="colorOnBackground">@color/color_on_background</item>
+        <item name="bottomNavigationStyle">@style/Theme.App.BottomNavigation</item>
+        <item name="appBarLayoutStyle">@style/Theme.App.AppBarLayout</item>
+        <item name="toolbarStyle">@style/Theme.App.Toolbar</item>
+        <item name="progressBarStyle">@style/Theme.App.CircularProgressBar</item>
+        <item name="fontFamily">@font/satoshi</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- SplashScreen -->
+    <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen.IconBackground">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo</item>
+        <item name="windowSplashScreenBackground">@color/color_secondary</item>
+        <item name="windowSplashScreenAnimationDuration">2500</item>
+        <item name="postSplashScreenTheme">@style/Theme.App</item>
+    </style>
+
+    <!-- AppBarLayout -->
+    <style name="Theme.App.AppBarLayout" parent="Widget.Material3.AppBarLayout">
+        <item name="android:background">@color/color_background</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="Theme.App.Toolbar" parent="Widget.Material3.Toolbar.Surface">
+        <item name="titleCentered">true</item>
+        <item name="android:background">@color/color_background</item>
+    </style>
+
+    <!-- BottomNavigation -->
+    <style name="Theme.App.BottomNavigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/color_background</item>
+        <item name="itemActiveIndicatorStyle">@style/Theme.App.BottomNavigation.Indicator</item>
+    </style>
+
+    <style name="Theme.App.BottomNavigation.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/color_surface</item>
+    </style>
+
+    <!-- ProgressBar -->
+    <style name="Theme.App.CircularProgressBar" parent="Widget.Material3.CircularProgressIndicator.Medium">
+        <item name="indicatorColor">@color/color_on_background</item>
+    </style>
+
+</resources>

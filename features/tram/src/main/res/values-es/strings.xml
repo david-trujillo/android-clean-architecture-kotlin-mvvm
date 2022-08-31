@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tram_stop_title">Parada</string>
+    <string name="tram_select_stop_title">Selecciona una parada</string>
+    <string name="tram_direction_title">Dirección</string>
+    <string name="tram_select_direction_title">Selecciona una dirección</string>
+
+    <string name="tram_empty_title">Busca o selecciona una parada del mapa.</string>
+</resources>

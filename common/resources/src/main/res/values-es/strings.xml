@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Android Kotlin MVVM</string>
+
+    <string name="try_again">Volver a intentarlo</string>
+
+    <string name="loading_title">Cargando…\n\nPuede tardar un poco.</string>
+    <string name="error_title">Oops!\nAlgo ha ido mal</string>
+
+    <plurals name="minutes">
+        <item quantity="one">%1$d minuto</item>
+        <item quantity="other">%1$d minutos</item>
+    </plurals>
+
+    <string name="no_data_title">Información no disponible</string>
+
+</resources>

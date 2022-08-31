@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tram_stop_title">Tram stop</string>
+    <string name="tram_select_stop_title">Select a tram stop</string>
+    <string name="tram_direction_title">Direction</string>
+    <string name="tram_select_direction_title">Select a direction</string>
+    
+    <string name="tram_empty_title">Search or select a bus stop on the map</string>
+</resources>

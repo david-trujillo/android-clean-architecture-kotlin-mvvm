@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/App.Parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llBusHeader"
+        style="@style/App.Box.Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App.Item.PrimaryText.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tram_stop_title" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etTramStop"
+            style="@style/App.Item.Editable.Clickable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tram_select_stop_title"
+            android:inputType="none" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/App.Item.PrimaryText.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tiny_box_size"
+            android:text="@string/tram_direction_title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTramDirection"
+            style="@style/App.Item.Editable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tram_select_direction_title"
+            android:saveEnabled="true" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srlTram"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llBusHeader">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:fadeScrollbars="true"
+            android:paddingStart="@dimen/medium_box_size"
+            android:paddingTop="@dimen/small_box_size"
+            android:paddingEnd="@dimen/medium_box_size"
+            android:paddingBottom="@dimen/small_box_size"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/item_tram_stop" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <include
+        android:id="@+id/iEmpty"
+        layout="@layout/view_empty_tram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llBusHeader"
+        tools:visibility="visible" />
+
+    <include
+        android:id="@+id/iLoading"
+        layout="@layout/loading_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llBusHeader" />
+
+    <include
+        android:id="@+id/iError"
+        layout="@layout/error_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llBusHeader" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
